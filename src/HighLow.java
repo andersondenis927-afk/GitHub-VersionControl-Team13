@@ -1,17 +1,21 @@
 import java.util.Random;
 import java.util.Scanner;
 
+//Class representing a single playing card (values 1–13)
+
 class Card {
-    private final int value; 
+    private final int value; // numeric value of the card (1 = Ace, 11 = Jack, etc.)
 
     public Card(int value) {
         this.value = value;
     }
 
+    // Returns the numeric value of the card
     public int getValue() {
         return value;
     }
 
+    // Returns a readable name for the card.
     public String display() {
         switch (value) {
             case 1: return "Ace";
